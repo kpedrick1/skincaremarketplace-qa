@@ -1,0 +1,66 @@
+{
+  "name": "skincaremarketplace-qa",
+  "scripts": {
+  },
+  "env": {
+    "BUSINESS_UNIT": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "SALESFORCE_CLIENT_ID": {
+      "required": true
+    },
+    "SALESFORCE_CLIENT_SECRET": {
+      "required": true
+    },
+    "SALESFORCE_CREDENTIAL_OBJECT": {
+      "required": true
+    },
+    "SALESFORCE_HOST": {
+      "required": true
+    },
+    "SALESFORCE_PASSWORD": {
+      "required": true
+    },
+    "SALESFORCE_SECURITY_TOKEN": {
+      "required": true
+    },
+    "SALESFORCE_USERNAME": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    },
+    "SITE_INVOICE_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
